@@ -1,0 +1,5 @@
+C:\Users\Wagner\GitAcademia1\Exercicio7_Receba_Frase\obj\Debug\net6.0\Exercicio7_Receba_Frase.csproj.AssemblyReference.cache
+C:\Users\Wagner\GitAcademia1\Exercicio7_Receba_Frase\obj\Debug\net6.0\Exercicio7_Receba_Frase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wagner\GitAcademia1\Exercicio7_Receba_Frase\obj\Debug\net6.0\Exercicio7_Receba_Frase.AssemblyInfoInputs.cache
+C:\Users\Wagner\GitAcademia1\Exercicio7_Receba_Frase\obj\Debug\net6.0\Exercicio7_Receba_Frase.AssemblyInfo.cs
+C:\Users\Wagner\GitAcademia1\Exercicio7_Receba_Frase\obj\Debug\net6.0\Exercicio7_Receba_Frase.csproj.CoreCompileInputs.cache
