@@ -1,25 +1,54 @@
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .container {
     height: 300px;
     width: 400px;
     background-color: rgb(34, 32, 204);
-    border-radius: 25px;
-   
-    margin: 150px auto;
-    position: static;
+    margin: 25 px auto;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 30px;
+    overflow: hidden;
+
+
+    
+
 }
 
 .elemento {
     width: 100px;
     height: 50px;
     background-color:red;
-    margin: 33px auto;
-    margin-right: 2px;
+    text-align: center;
+    line-height: 50px; 
+
+
+
+
+
 }
 
 
+/*// classe filhos
+.elemento:nth-child(4){
+    border-radius: 0px 0 px 30px 0px;
+}
 
+.elemento:nth-child(1){
+    border-radius: 0px 30px 0px 0px;
+}
 
-
+// determina o primeiro e quarto div
+elemento:first-child{
+    border-radius: 0px 30px 0px 0px;
+}
+elemento:last-child{
+    border-radius: 0px 30px 0px 0px;
+}
+*/
