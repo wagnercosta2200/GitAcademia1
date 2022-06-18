@@ -1,0 +1,220 @@
+* {
+    margin: 10;
+    padding: 0px;
+}
+/* Titulo (Tabela Periodica Completa 2022 - Nome dos Elementos Quimicos)*/
+#tabela{
+            text-align: center;
+            padding: 0px 0px;
+            font-size: 2em;   
+}
+
+
+table {
+    margin:20px auto;
+    width: 60px;
+    height: 60px;
+     }
+
+     #legenda{
+            text-align: center;
+            padding: 0px 0px;
+            font-size: 1.5em;
+    }
+
+
+
+/* Cores*/
+.verde{
+    background-color: #86B404;
+    border-radius: 4px;
+}
+.verde:hover{
+    background-color: white;
+    
+}
+
+.Amarelo{
+    background-color:  yellow;
+    border-radius: 4px;
+}
+.Amarelo:hover{
+    background-color:  white;
+}
+
+.laranja{
+    background-color: orange;
+    border-radius: 4px;
+}
+
+.laranja:hover{
+    background-color: white;
+}
+.rosa{
+    background-color:#F5A9A9;
+    border-radius: 4px;
+}
+.rosa:hover{
+    background-color:white;
+}
+
+.azul{
+    background-color:#A9F5F2;
+    border-radius: 4px;
+}
+.azul:hover{
+    background-color: white;
+}
+.verde{
+    background-color: #86B404;
+    border-radius: 4px;
+}
+.verde:hover{
+    background-color: white;
+}
+.verde1{
+    background-color: #088A85;
+    border-radius: 4px;
+}
+.verde1:hover{
+    background-color: white;
+}
+.azulPiscina{
+    background-color: #81DAF5;
+    border-radius: 4px;
+}
+.azulPiscina:hover{
+    background-color: white;
+}
+.azulEscuro{
+    background-color: #01A9DB;
+    border-radius: 4px;
+}
+.azulEscuro:hover{
+    background-color:white;
+}
+.azulClaro{
+    background-color: #81DAF5;
+    border-radius: 4px;
+}
+.azulClaro:hover{
+    background-color: white;
+}
+.lilas{
+    background-color: #F5A9F2;
+    border-radius: 4px;
+}
+.lilas:hover{
+    background-color: white;
+}
+.verdeEscuro{
+    background-color: #088A85;
+    border-radius: 4px;
+}
+.verdeEscuro:hover{
+    background-color: white;
+}
+
+table td:first-child{
+    text-align: center;
+    width: 60px;
+}
+
+table td:nth-child(2){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(3){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(4){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(5){
+    text-align: center;
+    width:60px;
+}table td:nth-child(6){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(7){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(8){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(9){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(10){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(11){
+    text-align: center;
+    width:60px;
+}table td:nth-child(12){
+    text-align: center;
+    width:60px;
+}table td:nth-child(13){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(14){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(15){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(16){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(17){
+    text-align: center;
+    width:60px;
+}
+table td:nth-child(18){
+    text-align: center;
+    width:60px;
+}
+
+/*Legenda*/
+.NaoMetais{
+    background-color: #9acd32;
+}
+.MetaisAlcalinos{
+    background-color:orange	;
+}
+.SemiMetais{
+    background-color: #088A85;
+}
+.OutrosMetais{
+    background-color:  #81DAF5;
+}
+.Lantanideos
+{
+    background-color:#81DAF5;
+}
+.GasesNobres{
+    background-color: #32b5e9;
+}
+.MetaisAlcalinosTerrosos{
+    background-color: yellow;
+}
+.Halogenios{
+    background-color:  #81DAF5;
+}
+.MetaisdeTransicao{
+    background-color:#F5A9A9;
+}
+.Acnideos{
+    background-color: #F5A9F2;   
+}
