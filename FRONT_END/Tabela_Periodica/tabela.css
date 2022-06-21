@@ -14,12 +14,13 @@ table {
     margin:20px auto;
     width: 60px;
     height: 60px;
-     }
+     } 
 
      #legenda{
             text-align: center;
             padding: 0px 0px;
             font-size: 1.5em;
+            grid-template-columns: 20%, 20%,20%,20%;
     }
 
 
@@ -31,6 +32,10 @@ table {
 }
 .verde:hover{
     background-color: white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
     
 }
 
@@ -40,6 +45,10 @@ table {
 }
 .Amarelo:hover{
     background-color:  white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 
 .laranja{
@@ -49,6 +58,10 @@ table {
 
 .laranja:hover{
     background-color: white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 .rosa{
     background-color:#F5A9A9;
@@ -56,6 +69,11 @@ table {
 }
 .rosa:hover{
     background-color:white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+    
 }
 
 .azul{
@@ -64,6 +82,10 @@ table {
 }
 .azul:hover{
     background-color: white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 .verde{
     background-color: #86B404;
@@ -71,6 +93,10 @@ table {
 }
 .verde:hover{
     background-color: white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 .verde1{
     background-color: #088A85;
@@ -78,6 +104,10 @@ table {
 }
 .verde1:hover{
     background-color: white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 .azulPiscina{
     background-color: #81DAF5;
@@ -85,6 +115,10 @@ table {
 }
 .azulPiscina:hover{
     background-color: white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 .azulEscuro{
     background-color: #01A9DB;
@@ -92,6 +126,10 @@ table {
 }
 .azulEscuro:hover{
     background-color:white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 .azulClaro{
     background-color: #81DAF5;
@@ -99,6 +137,10 @@ table {
 }
 .azulClaro:hover{
     background-color: white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 .lilas{
     background-color: #F5A9F2;
@@ -106,6 +148,10 @@ table {
 }
 .lilas:hover{
     background-color: white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 .verdeEscuro{
     background-color: #088A85;
@@ -113,6 +159,10 @@ table {
 }
 .verdeEscuro:hover{
     background-color: white;
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 
 table td:first-child{
@@ -187,8 +237,9 @@ table td:nth-child(18){
 }
 
 /*Legenda*/
-.NaoMetais{
+.NaoMetais {
     background-color: #9acd32;
+
 }
 .MetaisAlcalinos{
     background-color:orange	;
@@ -217,4 +268,36 @@ table td:nth-child(18){
 }
 .Acnideos{
     background-color: #F5A9F2;   
+}
+
+
+
+/*  TABELA LISTA DE ELEMENTOS QUÍMICOS*/
+
+table {
+    min-width: 1200px;
+    margin: 90px auto 20px auto;
+    border-collapse: collapse;
+}
+
+
+table caption {
+    font-weight: 300;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 25px 0;
+}
+table th,
+table td {
+    padding: 10px 10px;
+}
+
+table thead {
+    background-color: #e9ecef;
+    font-size: .8em;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-size: .8em;
 }
