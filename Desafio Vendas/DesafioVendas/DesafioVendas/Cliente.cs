@@ -73,8 +73,55 @@ namespace DesafioVendas
                 banco.fecharConexao();// fecha a conexão do banco
             }
 
+        }
+
+        
+        // Metodo para listar e gravar na lista as informaçês dos clientes a serem comsultada
+      
+        public static List<Cliente> GerarLista()
+        {
+            List<Cliente> listaclientes = new List<Cliente>();
+
+
+            Banco banco = new Banco();
+            SqlConnection cn = banco.abrirConexao();
+            SqlTransaction tran = cn.BeginTransaction();
+            SqlCommand command = new SqlCommand();
+            command.Connection = cn;
+            command.Transaction = tran;
+            command.CommandType = CommandType.Text;
+
+
+            command.CommandText = "select * from clientes order by Nome;";
+
+
+            try
+            {
+                SqlDataReader leitor = command.ExecuteReader();
+
+                while (leitor.Read())
+                {
+                    listaclientes.Add(new Cliente(int.Parse(leitor["idcliente"].ToString()), leitor["cpf"].ToString(), leitor["nome"].ToString(),
+                    leitor["telefone"].ToString(), leitor["email"].ToString()));
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                banco.fecharConexao();
+            }
+            return listaclientes;
 
         }
     }
 }
+
+
+
+
 

@@ -73,5 +73,54 @@ namespace DesafioVendas
                 banco.fecharConexao();// fecha a conexão do banco
             }
         }
+
+  
+        // Metodo para gravar na lista o produto ordenado por nome
+       
+        //public static List<Produtos> Gerarproduto()
+        //{
+        //    List<Produtos> listaprodutos = new List<Produtos>();
+        //    Banco banco = new Banco();
+        //    SqlConnection cn = banco.abrirConexao();
+
+        //    SqlTransaction tran = cn.BeginTransaction();
+        //    SqlCommand command = new SqlCommand();
+
+        //    command.Connection = cn;
+        //    command.Transaction = tran;
+        //    command.CommandType = CommandType.Text;
+
+
+        //    command.CommandText = "select * from produtos order by nome;";
+
+        //    try
+        //    {
+        //        SqlDataReader leitor = command.ExecuteReader();
+
+        //        while (leitor.Read())
+        //        {
+        //            listaprodutos.Add(new Produtos(leitor["codEAN"].ToString()), (leitor["nome"].ToString()),
+        //             Convert.ToDecimal(leitor["preco"].ToString()), int.Parse(leitor["estoque"].ToString()),int.Parse(leitor["id_Produto"].ToString()));
+        //        }
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+
+        //    }
+        //    finally
+        //    {
+        //        banco.fecharConexao();
+        //    }
+        //    return listaprodutos;
+        //}
+
+
+
+
+
     }
 }
+    
+
