@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+        integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Formulário Com JavaScript</title>
+</head>
+<!--Titulo -->
+<body class="bg -light">
+<div class="container">
+<div class="py-5 text-center">
+    <h1>Formulário com JavaScript</h1>
+</div>
+
+<main>
+
+    
+    <h2 class="mb-3 fs-4">Infomações Pessoais</h2>
+           
+
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label">Primeiro nome</label>
+          <input type="text" class="form-control" id="nome"pattern="^[A-Za-z]+$" value="" required>
+          <div class="valid-tooltip">
+            Parece bom!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip02" class="form-label">Sobrenome</label>
+          <input type="text" class="form-control" id="vsobrenome"pattern="^[A-Za-z]+$" value="" required>
+          <div class="valid-tooltip">
+            Parece bom!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltipNomedeusuário" class="form-label">Nome de usuário</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+            <input type="text" class="form-control" id="nome do usuario" pattern="^[A-Za-z]+$"aria-describedby="validationTooltipUsernamePrepend" required>
+            <div class="invalid-tooltip">
+                Por favor, escolha um nome de usuário único e válido.
+            </div>
+          </div>
+        </div>
+          <!--CEP-->
+        <div class="col-md-2 position-relative">
+            <label for="cep" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="cep" required>
+            <div class="invalid-tooltip">
+          Forneça um CEP válido.
+            </div>
+        </div>
+
+          <!--Cidade-->
+        <div class="col-md-3 position-relative">
+          <label for="cidade" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="cidade"pattern="^[A-Za-z]+$" required>
+          <div class="invalid-tooltip">
+            Forneça uma cidade válida.  
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+            <label for="bairro" class="form-label">Bairro</label>
+            <input type="text" class="form-control" id="bairro"pattern="^[A-Za-z]+$" required>
+            <div class="invalid-tooltip">
+            </div>
+          </div>
+        
+
+        <div class="col-md-1 position-relative">
+          <label for="estado" class="form-label">Estado</label>
+          <select class="form-select" id="estado" required></select>
+            <!-- <option selected disabled value="">Escolher...</option>
+            <option>...</option> -->
+          </select>
+          <div class="invalid-tooltip">
+            Selecione um estado válido.
+          </div>
+        </div>
+
+        <div class="col-md-3 position-relative">
+            <label for="complemento" class="form-label">Complemento</label>
+            <input type="text" class="form-control" id="complemento"pattern="^[A-Za-z]+$" required>
+            <div class="invalid-tooltip">
+            </div>
+          </div>
+
+          <div class="col-md-2 position-relative">
+            <label for="numero" class="form-label">Numero</label>
+            <input type="text" class="form-control" id="numero"pattern="^[A-Za-z]+$" required>
+            <div class="invalid-tooltip">
+            </div>
+          </div>
+
+          <div class="col-md-7 position-relative">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" id="email"placeholder="Email"pattern="^[A-Za-z]+$" required>
+            <div class="invalid-tooltip">
+            </div>
+          </div>
+       
+          <div class="col-md-3 position-relative">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="text" class="form-control" id="senha"placeholder="Senha"pattern="^[A-Za-z]+$" required>
+            <div class="invalid-tooltip">
+            </div>
+          </div>       
+
+<!--Enviar Formulário -->
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Enviar formulário</button>
+  </div>
+</form>
+</div>
+</main>
+
+
+<!-- <section id="tabela dados"class = "bg-white p-5 mb-5 d-none"> -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th colspan="2">Dados do Formulario</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+         <tr>   
+            <th>Nome</th>
+            <td id = "t-nome"></td>
+        </tr>
+
+        <tr>   
+            <th>Sobrenome</th>
+            <td id = "t-sobrenome"></td>
+        </tr>
+
+        <tr>   
+            <th>Nome de usuário</th>
+            <td id = "t-nomedeusuario"></td>
+        </tr>
+
+        <tr>   
+            <th>Cep</th>
+            <td id = "t-cep"></td>
+        </tr>
+
+        <tr>   
+            <th>Cidade</th>
+            <td id = "t-cidade"></td>
+        </tr>
+
+        <tr>   
+            <th>Bairro</th>
+            <td id = "t-bairro"></td>
+        </tr>
+
+        <tr>   
+            <th>Estado</th>
+            <td id = "t-estado"></td>
+        </tr>
+
+        <tr>   
+            <th>Complemento</th>
+            <td id = "t-complemento"></td>
+        </tr>
+
+        <tr>   
+            <th>Numero</th>
+            <td id = "t-numero"></td>
+        </tr>
+
+        <tr>   
+            <th>Email</th>
+            <td id = "t-email"></td>
+        </tr>
+
+        <tr>   
+            <th>Senha</th>
+            <td id = "t-senha"></td>
+        </tr>
+
+        </tbody>
+
+    </table>
+
+
+</section>
+
+
+
+</body>
