@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/" href="./images/favicon.ico" />
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./main.js"></script>
+    <title>Formulario JavaScript</title>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <h1>Formulário e JavaScript</h1>
+            <p class="lead">O formulário abaixo <strong>não irá enviar seus dados</strong>, apenas exemplifica o uso de diversos inputs e scripts JavaScript.</p>
+        </div>
+      
+       
+    </div>
+    <div class="container"> <!-- Nome -->
+        <form id="form" method="post" class="row justify-content-md-center g-4">
+            <div class="col-md-5">
+                <label for="inputnome" class="form-label">Nome <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="inputnome" name="Nome" required
+                    pattern="^[A-Za-z]+$" title="Você tem que informar seu primeiro nome">
+            </div>
+            <div class="col-md-5"><!--sobrenome-->
+                <label for="inputsobrenome" class="form-label">SobreNome <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="inputsobrenome" name="sobrenome" required
+                    pattern="^[A-Za-z]+$" title="
+                    Você tem que informar seu sobrenome">
+            </div>
+            <div class="col-md-3"><!-- email-->
+                <label for="inputEmail" class="form-label">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="inputEmail" name="email" required
+                    pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" title="Você deve informar seu e-mail">
+            </div>
+            <div class="col-md-4"><!-- login-->
+                <label for="inputLogin" class="form-label">Login</label>
+                <input type="text" class="form-control" id="inputLogin" name="login" disabled>
+            </div>
+            <div class="col-md-3"><!-- senha--Deve conter letra maiuscula numero e caracteres-->
+                <label for="inputPassword" class="form-label">Password <span class="text-danger">*</span></label>
+                <input type="password" class="form-control" id="inputPassword" name="password" required
+                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                    title="Você tem que informar uma senha forte"> 
+            </div>
+            <div class="col-md-3"><!-- cep-->
+                <label for="inputcep" class="form-label">Cep</label>
+                <input type="number" class="form-control" id="inputcep" name="cep">
+            </div>
+            <div class="col-md-4"><!-- Endereço-->
+                <label for="inputEndereço" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="inputEndereço" name="Endereço">
+            </div>
+            <div class="col-md-3"><!-- complemento-->
+                <label for="inputComplemento" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="inputComplemento" name="complemento">
+            </div>
+            <div class="col-md-3"><!-- bairro-->
+                <label for="inputBairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="inputBairro" name="bairro">
+            </div>
+            <div class="col-md-4"><!-- cidade-->
+                <label for="inputCidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCidade" name="cidade">
+            </div>
+            <div class="col-md-3"><!-- estado-->
+                <label for="inputEstado" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="inputEstado" name="estado">
+            </div>
+            <div class="mt-auto col-md-3"><!-- github-->
+                <label for="inputState" class="form-label">Github <span class="text-danger">*</span></label>
+                <div class="input-group">
+                   
+                    <input type="text" class="form-control" id="inputGithub" aria-label=" GitHub"
+                        aria-describedby="basic-addon1" name="github" required>
+                </div>
+            </div>
+            <div class="col-md-4"><!-- academia-->
+                <label for="inputAcademy" class="form-label">Academia <span class="text-danger">*</span></label>
+                <select id="inputAcademy" name="academy" class="form-select" required>
+                    <option value="">Escolher...</option>
+                    <option value="1">Academia .Net</option>
+                    <option value="1">Academia  Java</option>
+                </select>
+            </div>
+            <div class="col-md-3"><!-- professor-->
+                <label for="inputTeacher" class="form-label">Professor <span class="text-danger">*</span></label>
+                <select id="inputTeacher" class="form-select" name="teacher" required>
+                    <option value="">Escolher...</option>
+                    <option value="1">Alexandre Zamberlan</option>
+                    <option value="2">Deivison Pasa</option>
+                    <option value="3">Ricardo Frohlich</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-10">
+                <label for="Terms">Termo de Uso</label>
+                <div class="form-control" id="Terms" rows="5">O que diz a nova lei LGPD?
+                    Resultado de imagem para lei lgpd 2022
+                    O principal objetivo da LGPD é dar às pessoas maior controle sobre suas próprias informações. A lei estabelece regras para empresas e organizações sobre coleta, uso, armazenamento e compartilhamento de dados pessoais, impondo multas e sanções no caso de descumprimento.
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="agreeTerms" required>
+                <label class="form-check-label">
+                    Concorde com os termos
+                </label>
+            </div>
+            <div class="col-sm-10">
+                <input class="form-check-input" type="radio" name="radios" id="radios" value="1" checked>
+                <label class="form-check-label">
+                    Aceito receber boletins de novidades
+                </label>
+            </div>
+            <div class="col-sm-10">
+                <input class="form-check-input" type="radio" name="radios" id="radios2" value="0">
+                <label class="form-check-label">
+                    Não concordo
+                </label>
+            </div>
+            <div class="text-center">
+                <button type="submit" id="submit" class="btn btn-dark btn-lg">Salvar</button>
+            </div>
+        </form>
+    </div>
+
+   <!-- <div class="col-md-8 mx-auto mt-5 pt-5 d-none" id="table"> -->
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th scope="row">Nome</th>
+                    <td id="nome"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Sobrenome</th>
+                    <td id="sobrenome"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Email</th>
+                    <td id="email"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Login</th>
+                    <td id="login"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Password</th>
+                    <td id="password"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Cep</th>
+                    <td id="cep--"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Endereço</th>
+                    <td id="endereço"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Complemento</th>
+                    <td id="complemento"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Bairro</th>
+                    <td id="bairro"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Cidade</th>
+                    <td id="cidade"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Estado</th>
+                    <td id="estado"></td>
+                </tr>
+                <tr>
+                    <th scope="row">GitHub</th>
+                    <td id="github"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Academia</th>
+                    <td id="academia"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Professor</th>
+                    <td id="professor"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

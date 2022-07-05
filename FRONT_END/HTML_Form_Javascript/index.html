@@ -113,7 +113,72 @@
             <input type="text" class="form-control" id="senha"placeholder="Senha"pattern="^[A-Za-z]+$" required>
             <div class="invalid-tooltip">
             </div>
-          </div>       
+          </div> 
+          
+          <div class="col-2">
+            <label class="Academia" for="inlineFormSelectPref">Academia</label>
+            <select class="form-select" id="Academia">
+              <option selected>Opção...</option>
+              <option value="1">.Net</option>
+              <option value="2">Java</option>
+            </select>
+          </div>
+        
+
+          <div class="col-2">
+            <label class="Professor" for="inlineFormSelectPref">Professor</label>
+            <select class="form-select" id="Professor">
+              <option selected>Opção...</option>
+              <option value="1">Alexandre</option>
+              <option value="2">Deivison</option>
+              <option value="2">Ricardo</option>
+            </select>
+          </div>
+
+          <div class="col-8">
+            <label class="GitHub" for="inlineFormSelectPref">GitHub</label>
+            <input type="text" class="form-control" id="GitHub"placeholder="GitHub"pattern="^[A-Za-z]+$" required>
+            <div class="invalid-tooltip">
+            </div>
+          </div>
+
+          <h2 class="mb-3 fs-4">Termos Legais</h2>
+
+
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Uma das interfaces mais usadas e mais importantes no design de interface são os formulários. Tanto para a web quanto para o mobile, são usados para cadastros, serviços de assinatura, pagamentos, vendas de produtos, filtros de buscas, inscrições, entre várias outras opções.
+
+                    Tenho percebido que ao mesmo tempo que os formulários podem ajudar nos negócios, eles também podem ser o motivo de uma alta taxa de desistência dos seus possíveis usuários.</label>
+          </div>
+      
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Eu Li e Concordo com os termos acima
+            </label>
+        </div>
+    
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Quero Receber Novidades por Email
+            </label>
+          </div>
+        
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Não Quero Receber Informações
+            </label>
+          </div>
+        
+
+
+
+
 
 <!--Enviar Formulário -->
   <div class="col-12">
@@ -189,13 +254,23 @@
             <td id = "t-senha"></td>
         </tr>
 
+        <tr>   
+            <th>Academia</th>
+            <td id = "t-academia"></td>
+        </tr>
+
+        <tr>   
+            <th>Professor</th>
+            <td id = "t-professor"></td>
+        </tr>
+
+        <tr>   
+            <th>GitHub</th>
+            <td id = "t-GitHub"></td>
+        </tr>
+
         </tbody>
 
     </table>
-
-
 </section>
-
-
-
 </body>

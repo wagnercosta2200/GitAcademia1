@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Cadastro Usuário</title>
+</head>
+<body>
+        <!--Use as classes de grade predefinidas do Bootstrap para alinhar rótulos e grupos de controles de formulário em um layout horizontal.-->
+    <form class="form-horizontal">
+        <fieldset>
+
+         <div class="Panel with panel-primary class"><!--Cabeçalho com com azul-->
+            <div class="panel-heading" >Formulario Cadastro de Pessoas</div>
+            
+            <div class="panel-footer"><!--Fomulario fica com cor pouco cinza-->
+        <div class="form-group"> 
+
+            <div class="col-md-11 control-label">
+                <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+        </div>
+       
+     
+        <!-- nome e sobrenome-->
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="nome">Nome <h11>*</h11></label>  
+          <div class="col-md-4">
+          <input id="nome" name="nome" placeholder="" class="form-control input-md" required="" type="text">
+          </div>
+
+          <label class="col-md-1 control-label" for="sobrenome">SobreNome <h11>*</h11></label>  
+          <div class="col-md-4">
+          <input id="sobrenome" name="sobrenome" placeholder="" class="form-control input-md" required="" type="text">
+          </div>
+        </div>
+ 
+             
+        <!-- Email-->
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="prependedtext">Email<h11>*</h11></label>
+          <div class="col-md-3">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+              <input id="email" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+            </div>
+          </div>
+
+
+          <!--  senha e login-->
+        
+            <label class="col-md-1 control-label" for="login">Login<h11>*</h11></label>  
+            <div class="col-md-2">
+            <input id="login" name="login"  class="form-control input-md" required="" type="text">
+            </div>
+  
+            <label class="col-md-1 control-label" for="Senha">Senha<h11>*</h11></label>  
+            <div class="col-md-2">
+            <input id="senha" name="senha"  class="form-control input-md" required=""  type="text">
+            </div>
+          
+        </div>
+
+           
+        <!-- Consulta CEP-->
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
+          <div class="col-md-3">
+            <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+          </div>
+          <div class="col-md-2">
+              <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Consultar</button>
+            </div>
+        </div>
+        
+        <!-- Começa inserir campos de Endereço (que ja serão preenchidos ao digitar o CEP)-->
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
+          <div class="col-md-4">
+            <div class="input-group-prepend">
+              <span class="input-group-prepend">Rua</span> 
+              <input id="endereco" name="endereco" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+            </div>
+            
+          </div>
+
+          
+            <div class="col-md-3">
+            <div class="input-group-prepend">
+              <span class="input-group-prepend">Numero <h11>*</h11></span>
+              <input id="complemento" name="Numero" class="form-control" placeholder="" required=""  type="text">
+            </div>
+            
+          </div>
+
+          
+          
+          <div class="col-md-2">
+            <div class="input-group-prepend">
+              <span class="input-group-prepend">Bairro</span>
+              <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+            </div>
+            
+            
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="prependedtext"></label>
+          <div class="col-md-5">
+            <div class="input-group-prepend">
+              <span class="input-group-prepend">Cidade</span>
+              <input id="cidade" name="cidade" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+            </div>
+            
+          </div>
+          
+           <div class="col-md-4">
+            <div class="input-group-prepend">
+              <span class="input-group-prepend">Estado</span>
+              <input id="estado" name="estado" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+            </div>
+            
+
+            
+          </div>
+        </div>
+
+        
+        <div class="form-group">
+              <label class="col-md-2 control-label" for="github">Seu Perfil GitHub <h11>*</h11></label>
+        
+              <div class="col-md-3">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="github">github.com</span>
+                    <input type="text" class="form-control" required="" id="github" aria-describedby="basic-addon3" placeholder="username" >
+                  </div>
+                  
+              </div>
+
+              <label class="col-md-1 control-label" for="academia">Academia <h11>*</h11></label>
+              <div class="col-md-2">
+                <select required id="academia" name="academia" class="form-control" placeholder="Selecione">
+                  <option value="" Selected>Selecione..</option>
+                  <option value="dotNet">DotNet</option>
+                  <option value="java">Java</option>
+                </select>
+              </div>
+
+
+              <label class="col-md-1 control-label" for="professor">Professor <h11>*</h11></label>
+              <div class="col-md-2">
+                <select required id="professor" name="professor" class="form-control" placeholder="Selecione">
+                  <option value="" Selected>Selecione..</option>
+                  <option value="alexandre">Alexandre Zamberlan</option>
+                  <option value="ricardo">Ricardo</option>
+                  <option value="deivison">Deivison Pasa</option>
+                </select>
+              </div>         
+              <br>
+            
+        </div>
+
+                   
+            <div class="form-group">
+               
+                <label  class=" col-md-2" for="texto"></label>
+                <div class="col-md-9">
+                     <h3>Termos legais</h3>
+                     <textarea class="form-control" id="texto" rows="3">
+                        De acordo com o art. 5, XII, da LGPD, o consentimento fornecido pelo titular é a manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de seus dados pessoais para uma finalidade determinada.
+
+                        Em resumo, essa base diz respeito à necessidade de uma declaração que concorda com o uso de seus dados pessoais pela empresa para uma determinada finalidade.
+                     </textarea>
+
+                     <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Eu Li e Concordo com os Termos acima</label>
+                      </div>
+                      <br>
+
+                     <div class="form-check">
+                        <input class="form-check-input" type="radio" name="opcao-sim" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="opcao-sim">
+                          Quero Receber Novidade Por Email
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="opcao-nao" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="opcao-nao">
+                          Não Quero Receber Informações
+                        </label>
+                      </div>
+                </div>
+
+              
+                
+            </div>
+
+
+             <!-- Botão Salvar  -->
+             <div class="form-group">
+                <label class="col-md-2 control-label" for="Salvar"></label>
+              <div class="col-md-9">
+                <button  type="submit" onclick="Salvar()" class="btn btn-primary btn-lg btn-block">Salvar</button>
+
+               
+               
+               </div>
+           </div>
+
+           <br>
+           <!--Dados dos fomulários-->
+          <div class="for-group" class="tabela-dados">
+              <label class="col-md-2 control-label"></label>
+
+               <div class="col-md-9">
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                     
+                      <th scope="col">Dados do Formulário</th>
+                     
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Nome: <p id="nome"></p></th>
+                      
+                     
+                    </tr>
+                    <tr>
+                      <th scope="row">Sobre Nome: <p id="sobrenome"></p></th>
+                     
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row">Email: <p id="email"></th>
+                      
+                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Login: <p id="login"></p></th>
+                     
+                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Senha: <p id="senha"></th>
+                      
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Rua: <p id="rua"></p></th>
+                     
+                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Numero: <p id="numero"></th>
+                      
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Bairro: <p id="bairro"></p></th>
+                      
+                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Estado: <p id="estado"></p></th>
+                      
+                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Cidade: <p id="cidade"></p></th>
+                      
+                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">GitHub: <p id="github"></th>
+                      
+                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Academia: <p id="academia"></p></th>
+                      
+                     
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Professor: <p id="professor"></p></th>                     
+                    </tr>
+
+                  </tbody>
+                </table>
+               </div>
+          </div>
+
+
+               
+       </fieldset>      
+    </form>
+    
+    
+</body>
+</html>
