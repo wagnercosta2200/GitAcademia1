@@ -7,7 +7,7 @@ namespace SistemaDeContatos.Models
     public class ContatoModel
     {
         [Column("Id")]
-        [Display(Name = "Codigo")]
+        [Display(Name = "Fila")]
         public int Id { get; set; }
         [Column("Nome")]
         [Display(Name = "Nome")]
