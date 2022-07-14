@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TKlExcM9U6m9n/LkzFP4ggXWw/xJ6ULd72I/JK7YvBvI16Ya+3kw3rr/EhrBWpA5qiL+Pa7XuovdJZ/k8kWApA==",
+  "dgSpecHash": "oum6E4hs6Go5SpPsrofWeWhtGGTAOgu9Z1oN3m7Gi1mggm2zU8iz4QhLF0Msdki+38B2TLb2IA3hIB462WNLfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Wagner\\GitAcademia1\\exercicioAcademia\\MVC\\SistemaDeContatos\\SistemaDeContatos\\SistemaDeContatos.csproj",
+  "projectFilePath": "C:\\Users\\Wagner\\GitAcademia1\\DesafioFinal_Dot_NET\\SistemaDeContatos\\SistemaDeContatos\\SistemaDeContatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wagner\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Wagner\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

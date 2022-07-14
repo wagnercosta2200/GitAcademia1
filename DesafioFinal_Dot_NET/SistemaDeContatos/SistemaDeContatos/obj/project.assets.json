@@ -10117,11 +10117,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wagner\\GitAcademia1\\exercicioAcademia\\MVC\\SistemaDeContatos\\SistemaDeContatos\\SistemaDeContatos.csproj",
+      "projectUniqueName": "C:\\Users\\Wagner\\GitAcademia1\\DesafioFinal_Dot_NET\\SistemaDeContatos\\SistemaDeContatos\\SistemaDeContatos.csproj",
       "projectName": "SistemaDeContatos",
-      "projectPath": "C:\\Users\\Wagner\\GitAcademia1\\exercicioAcademia\\MVC\\SistemaDeContatos\\SistemaDeContatos\\SistemaDeContatos.csproj",
+      "projectPath": "C:\\Users\\Wagner\\GitAcademia1\\DesafioFinal_Dot_NET\\SistemaDeContatos\\SistemaDeContatos\\SistemaDeContatos.csproj",
       "packagesPath": "C:\\Users\\Wagner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wagner\\GitAcademia1\\exercicioAcademia\\MVC\\SistemaDeContatos\\SistemaDeContatos\\obj\\",
+      "outputPath": "C:\\Users\\Wagner\\GitAcademia1\\DesafioFinal_Dot_NET\\SistemaDeContatos\\SistemaDeContatos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Wagner\\AppData\\Roaming\\NuGet\\NuGet.Config",
