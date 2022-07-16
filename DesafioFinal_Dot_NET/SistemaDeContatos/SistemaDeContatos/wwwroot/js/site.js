@@ -5,7 +5,7 @@
 
 
 
-//função de tradução e inclusão do datatable
+//função de tradução e inclusão do datatable( Pesquisas)
 $(document).ready(function () {
     $('#table-contatos').DataTable({
         "ordering": true,
