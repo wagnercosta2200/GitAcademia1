@@ -1,7 +1,7 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿// Consulte a documentação em https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+// para obter detalhes sobre como configurar este projeto para agrupar e reduzir ativos da Web estáticos.
 
-// Write your JavaScript code.
+// Escreva seu código JavaScript.
 
 
 
